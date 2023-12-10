@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="About Us.css" />
+    <title>About Us</title>
+  </head>
+  <body id="body">
+    <figure class="ball" id="ball1"></figure>
+    <figure class="ball" id="ball2"></figure>
+    <figure class="ball" id="ball3"></figure>
+    <figure class="ball" id="ball4"></figure>
+    <figure class="ball" id="ball5"></figure>
+    <figure class="ball" id="ball6"></figure>
+    <figure class="ball" id="ball7"></figure>
+
+    <div class="About-container">
+      <!-- navbar  -->
+      <nav class="nav">
+        <!-- <img src="logo.png" alt="logo" /> -->
+        <div class="nav-containt">
+          <a href="./index.html"
+            ><div class="nav-btn"><h2>home</h2></div></a
+          >
+          <a href="./Tools.html"
+            ><div class="nav-btn"><h2>tools</h2></div></a
+          >
+          <a href="./About Us.html"
+            ><div class="nav-btn"><h2>about us</h2></div>
+          </a>
+          <a href="./Login.html"
+            ><div class="nav-btn"><h2>login</h2></div></a
+          >
+          <i class="ri-moon-fill nav-btn" id="mode"></i>
+
+          <!-- ri-sun-fill -->
+        </div>
+      </nav>
+      <!-- end navbar  -->
+
+      <main>
+        <div class="about-us-text">
+          <div
+            class="para-1"
+            id="para-1"
+            data-tilt
+            data-tilt-max="10"
+            data-tilt-speed="200"
+          >
+            <h1>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores
+              voluptas sapiente accusamus quia quas quod cum. Ipsa incidunt
+              molestiae pariatur.voluptas sapiente accusamus quia quas quod cum.
+              Ipsa incidunt molestiae pariatur.
+            </h1>
+            <h1>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus
+              officia error perferendis eos, hic exercitationem.voluptas
+              sapiente accusamus quia quas quod cum. Ipsa incidunt molestiae
+              pariatur.ferendis eos, hic exercitationem.voluptas sapiente
+              accusamus quia quas quod cum.
+            </h1>
+          </div>
+        </div>
+
+        <!-- form  -->
+
+        <form action="submit">
+          <h1>Contact Us</h1>
+
+          <div class="input-box">
+            <input type="text" placeholder="NAME" />
+            <i class="ri-user-3-line"></i>
+          </div>
+
+          <div class="input-box">
+            <input type="email" placeholder="EMAIL" />
+            <i class="ri-mail-line"></i>
+          </div>
+
+          <div class="input-box" id="message">
+            <textarea
+              rows="3"
+              cols="50"
+              name="comment"
+              form="usrform"
+              placeholder="Message"
+            ></textarea>
+            <i class="ri-message-3-line"></i>
+          </div>
+
+          <button type="submit" class="btn">
+            Submit <i class="ri-arrow-right-circle-fill"></i>
+          </button>
+        </form>
+      </main>
+    </div>
+    <script type="text/javascript" src="vanilla-tilt.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

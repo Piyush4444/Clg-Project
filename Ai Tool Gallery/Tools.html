@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Tools.css" />
+    <link
+      href="http://www.jqueryscript.net/css/jquerysctipttop.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <title>AI Tools</title>
+  </head>
+  <body id="body">
+    <figure class="ball" id="ball1"></figure>
+    <figure class="ball" id="ball2"></figure>
+    <figure class="ball" id="ball3"></figure>
+    <figure class="ball" id="ball4"></figure>
+    <figure class="ball" id="ball5"></figure>
+    <figure class="ball" id="ball6"></figure>
+    <figure class="ball" id="ball7"></figure>
+
+    <div class="Tool-container">
+      <!-- navbar  -->
+      <nav class="nav">
+        <!-- <img src="logo.png" alt="logo" /> -->
+        <div class="nav-containt">
+          <a href="./index.html"
+            ><div class="nav-btn"><h2>home</h2></div></a
+          >
+          <a href="./Tools.html"
+            ><div class="nav-btn"><h2>tools</h2></div></a
+          >
+          <a href="./About Us.html"
+            ><div class="nav-btn"><h2>about us</h2></div>
+          </a>
+          <a href="./Login.html"
+            ><div class="nav-btn"><h2>login</h2></div></a
+          >
+          <i class="ri-moon-fill nav-btn" id="mode"></i>
+
+          <!-- ri-sun-fill -->
+        </div>
+      </nav>
+      <!-- end navbar  -->
+
+      <main class="container">
+        <h1>trending ai tools</h1>
+        <div class="containt-container">
+          <!-- cards  -->
+          <div id="card" class="card">
+            <ul class="slide-wrap" id="triger">
+              <li class="pos1">
+                <div class="inner">
+                  <a href="https://www.tensorflow.org/">
+                    <img src="./Tensorflow.png" />
+                    <span class="pic-tit">Tensorflow</span>
+                  </a>
+                </div>
+              </li>
+              <li class="pos2">
+                <div class="inner">
+                  <a href="https://pytorch.org/">
+                    <img src="./pytorch.png" />
+                    <span class="pic-tit">Pytorch</span>
+                  </a>
+                </div>
+              </li>
+              <li class="pos3">
+                <div class="inner">
+                  <a href="https://scikit-learn.org/">
+                    <img src="./scikit.png" />
+                    <span class="pic-tit">Scikit</span>
+                  </a>
+                </div>
+              </li>
+              <li class="pos4">
+                <div class="inner">
+                  <a href="https://keras.io/">
+                    <img src="./keras.png" />
+                    <span class="pic-tit">Keras</span>
+                  </a>
+                </div>
+              </li>
+              <li class="pos5">
+                <div class="inner">
+                  <a href="https://opencv.org/">
+                    <img src="./openCV.png" />
+                    <span class="pic-tit">OpenCV</span>
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div class="inner">
+                  <a href="https://www.nltk.org/">
+                    <img src="./nltk.png" />
+                    <span class="pic-tit">NLTK</span>
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div class="inner">
+                  <a href="https://www.ibm.com/cloud/watson-studio">
+                    <img src="./IBM.png" />
+                    <span class="pic-tit">Watson-Studio</span>
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div class="inner">
+                  <a
+                    href="https://azure.microsoft.com/en-us/services/machine-learning/"
+                  >
+                    <img src="./azure.png" />
+                    <span class="pic-tit">Machine-Learning</span>
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div class="inner">
+                  <a href="https://www.h2o.ai/">
+                    <img src="./H2O.PNG" />
+                    <span class="pic-tit">H2O</span>
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div class="inner">
+                  <a href="https://cloud.google.com/ai-platform">
+                    <img src="./googleai.png" />
+                    <span class="pic-tit">AI-Platform</span>
+                  </a>
+                </div>
+              </li>
+            </ul>
+            <i class="arrow prev" id="jprev">&lt;</i>
+            <i class="arrow next" id="jnext">&gt;</i>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- for cards only  -->
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="jquery.rollingslider.js"></script>
+    <script>
+      $("#card").RollingSlider({
+        showArea: "#triger",
+        prev: "#jprev",
+        next: "#jnext",
+        moveSpeed: 300,
+        autoPlay: true,
+      });
+    </script>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

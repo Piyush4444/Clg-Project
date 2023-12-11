@@ -145,26 +145,23 @@
     </div>
 
     <script type="text/javascript" src="script.js"></script>
+
+    <!-- for cards only  -->
+    <script
+      type="text/javascript"
+      src="http://code.jquery.com/jquery-1.11.3.min.js"
+    ></script>
+    <script src="code.jquery.com/jquery.min.js"></script>
+    <script type="text/javascript" src="./jquery.rollingslider.js"></script>
+
+    <script type="text/javascript">
+      $("#card").RollingSlider({
+        showArea: "#triger",
+        prev: "#jprev",
+        next: "#jnext",
+        moveSpeed: 300,
+        autoPlay: true,
+      });
+    </script>
   </body>
-  <!-- for cards only  -->
-  <script
-    type="text/javascript"
-    src="http://code.jquery.com/jquery-1.11.3.min.js"
-  ></script>
-  <script type="text/javascript" src="./jquery.rollingslider.js"></script>
-
-
-
-<script src="//code.jquery.com/jquery.min.js"></script>
-<script src="jquery.hislide.js" ></script>
-
-  <script type="text/javascript">
-    $("#card").RollingSlider({
-      showArea: "#triger",
-      prev: "#jprev",
-      next: "#jnext",
-      moveSpeed: 300,
-      autoPlay: true,
-    });
-  </script>
 </html>

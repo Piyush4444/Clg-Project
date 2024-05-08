@@ -1,1 +1,1 @@
-# /Ai Tool Gallery/
+# A Simple project for collage Assignment
